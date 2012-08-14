@@ -3,7 +3,7 @@
     <artifactId>dropwizard-util</artifactId>
     <groupId>com.fillta</groupId>
     <packaging>jar</packaging>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>{project.artifactId}</name>
     <description>
 
