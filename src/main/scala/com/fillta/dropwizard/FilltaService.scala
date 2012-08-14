@@ -22,7 +22,7 @@ import com.fillta.dropwizard.health.HealthCheck
 abstract class FilltaService[C <: Config](name: String) extends ScalaService[C](name) {
 
   protected var errorHandler: ExceptionMapper = null
-  protected var config: Config = null
+  protected var config: C
   protected var environment: Environment = null
   protected var resourcePackages: List[String] = new ArrayList[String]
   protected var providerPackages: List[String] = new ArrayList[String]
@@ -57,7 +57,7 @@ abstract class FilltaService[C <: Config](name: String) extends ScalaService[C](
 
 
   protected def initialize(configuration: C, environment: Environment) {
-    this.config = configuration.asInstanceOf[Config]
+    this.config = configuration
     this.environment = environment
     val configProvider: ConfigProvider = new ConfigProvider(config)
     environment.addProvider(configProvider)

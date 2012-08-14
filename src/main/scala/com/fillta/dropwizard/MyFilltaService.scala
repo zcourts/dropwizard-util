@@ -18,4 +18,5 @@ object MyFilltaService extends FilltaService[Config]("MyFilltaService") {
     addProviderPackage(classOf[AbstractInjectableProvider[_]].getPackage.getName)
   }
 
+  protected var config: Config = null
 }
