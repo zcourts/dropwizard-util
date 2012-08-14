@@ -1,4 +1,4 @@
-package com.fillta.odin.dropwizard
+package com.fillta.dropwizard
 
 import auth.{RequireAuth, AuthFilter, CookieAuthenticator}
 import com.sun.jersey.core.spi.scanning.PackageNamesScanner
@@ -10,25 +10,23 @@ import javax.ws.rs._
 import javax.ws.rs.ext.Provider
 import java.lang.reflect.Method
 import java.util._
-import providers.ConfigProvider
-import providers.info.crlog.amigos.providers.{AbstractInjectableProvider, CipherProvider}
+import providers.{CipherProvider, ConfigProvider}
 import javax.servlet.http.HttpSession
 import com.yammer.dropwizard.ScalaService
-import com.fillta.odin.conf.Config
-import com.fillta.odin.health.HealthCheck
-import com.fillta.odin.resources.BaseResource
+import com.fillta.dropwizard.conf.Config
+import com.fillta.dropwizard.health.HealthCheck
 
 /**
  * @author Courtney Robinson <courtney@crlog.info>
  */
-abstract class Service[C <: Config](name: String) extends ScalaService[C](name) {
+abstract class FilltaService[C <: Config](name: String) extends ScalaService[C](name) {
 
   protected var errorHandler: ExceptionMapper = null
   protected var config: Config = null
   protected var environment: Environment = null
   protected var resourcePackages: List[String] = new ArrayList[String]
   protected var providerPackages: List[String] = new ArrayList[String]
-  protected var log: Log = Log.forClass(classOf[Service[_ <: Config]])
+  protected var log: Log = Log.forClass(classOf[FilltaService[_ <: Config]])
   protected var cipherProvider: CipherProvider = null
   protected var filteredClasses: Set[java.lang.Class[_]] = new HashSet[Class[_]]
   protected var authFilter: AuthFilter = null

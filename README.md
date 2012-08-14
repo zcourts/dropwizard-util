@@ -2,7 +2,7 @@
 
 It includes a base structure to get started with as well as a few useful utilities.
 
-See the com.fillta.odin.dropwizard package for all the extensions this adds.
+See the com.fillta.dropwizard package for all the extensions this adds.
 
 * RequireAuth annotation - If this annotation is added to a class then all its methods are protected. Only authenticated requests can be made to the class.
 	The annotation can also be added just to a single method and only that method will be protected.
@@ -31,15 +31,3 @@ See the com.fillta.odin.dropwizard package for all the extensions this adds.
 			It also automatically does things like, scan a given package and automatically add all
 			Resources, Providers and Filters. All you have to do is provide the path of the package, can have
 			as many packages as needed.
-
-# RPM packaging
-
- If you wish to package your service as an RPM
-
- * uncomment the maven plugin in pom.xml after the following comment:
- "__<!--uncomment to build an RPM from your project-->__"  AND change
- <group>Services/my-service</group> to replace my-service with your service's name
-
- * __Rename__ src/main/init.d/my-service to whatever your service is called
-
-

@@ -1,8 +1,8 @@
-package com.fillta.odin.dropwizard.errors
+package com.fillta.dropwizard.errors
 
 import javax.ws.rs.WebApplicationException
 import javax.ws.rs.core.Response
-import com.fillta.odin.conf.Config
+import com.fillta.dropwizard.conf.Config
 
 /**
  * Courtney Robinson <courtney@crlog.info>

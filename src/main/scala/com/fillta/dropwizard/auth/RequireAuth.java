@@ -1,4 +1,4 @@
-package com.fillta.odin.dropwizard.auth;
+package com.fillta.dropwizard.auth;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

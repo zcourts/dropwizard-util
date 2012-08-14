@@ -1,10 +1,9 @@
-package com.fillta.odin.dropwizard.auth
+package com.fillta.dropwizard.auth
 
 import javax.servlet.FilterChain
 import javax.servlet.ServletRequest
 import javax.servlet.ServletResponse
 import javax.servlet.http.HttpServletRequest
-import com.fillta.odin.dropwizard.auth.info.crlog.amigos.auth.AESEncrypter
 
 /**
  * An authenticator is used to know when to deny or allow access to resources

@@ -1,5 +1,4 @@
-package com.fillta.odin.dropwizard.auth
-package info.crlog.amigos.auth
+package com.fillta.dropwizard.auth
 
 import com.yammer.dropwizard.logging.Log
 import sun.misc.BASE64Decoder

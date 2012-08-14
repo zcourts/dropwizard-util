@@ -1,9 +1,8 @@
-package com.fillta.odin.dropwizard.providers
-package info.crlog.amigos.providers
+package com.fillta.dropwizard.providers
 
 import com.sun.jersey.api.core.HttpContext
 import javax.ws.rs.ext.Provider
-import com.fillta.odin.dropwizard.auth.info.crlog.amigos.auth.AESEncrypter
+import com.fillta.dropwizard.auth.AESEncrypter
 
 /**
  * Courtney Robinson <courtney@crlog.info>

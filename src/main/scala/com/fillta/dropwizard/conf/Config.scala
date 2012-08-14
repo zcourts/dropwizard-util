@@ -1,23 +1,23 @@
-package com.fillta.odin.conf
+package com.fillta.dropwizard.conf
 
 import com.yammer.dropwizard.config.{HttpConfiguration, Configuration}
 import org.codehaus.jackson.annotate.JsonProperty
 import javax.validation.Valid
 import javax.validation.constraints._
-import com.fillta.odin.dropwizard.auth.Algorithms
+import com.fillta.dropwizard.auth.Algorithms
 
 /**
- * @author Courtney Robinson <courtney@crlog.info> @ 17/02/12
+ * @author Courtney Robinson <courtney@crlog.info>
  */
 
 class Config extends Configuration {
   @JsonProperty
   protected var log_http_errors: Boolean = true
 
-//  @Valid
-//  @NotNull
-//  @JsonProperty
-//  override protected var http: HttpConfig = new HttpConfig
+  //  @Valid
+  //  @NotNull
+  //  @JsonProperty
+  //  override protected var http: HttpConfig = new HttpConfig
 
   @Valid
   @NotNull

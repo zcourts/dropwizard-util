@@ -1,4 +1,4 @@
-package com.fillta.odin.dropwizard.conf
+package com.fillta.dropwizard.conf
 
 import com.yammer.dropwizard.config.HttpConfiguration
 

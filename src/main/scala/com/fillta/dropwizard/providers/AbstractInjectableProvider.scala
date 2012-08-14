@@ -1,5 +1,4 @@
-package com.fillta.odin.dropwizard.providers
-package info.crlog.amigos.providers
+package com.fillta.dropwizard.providers
 
 import com.sun.jersey.core.spi.component.ComponentContext
 import com.sun.jersey.core.spi.component.ComponentScope

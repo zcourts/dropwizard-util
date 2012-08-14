@@ -1,10 +1,10 @@
-package com.fillta.odin.dropwizard
+package com.fillta.dropwizard
 
 import com.yammer.dropwizard.logging.Log
 import errors.ErrorHandler
 import javax.ws.rs.core.{MediaType, Response}
 import javax.ws.rs.ext.Provider
-import com.fillta.odin.conf.Config
+import com.fillta.dropwizard.conf.Config
 import com.sun.jersey.api.NotFoundException
 
 /**

@@ -1,15 +1,14 @@
-package com.fillta.odin
+package com.fillta.dropwizard
 
 import conf.Config
-import dropwizard.providers.info.crlog.amigos.providers.AbstractInjectableProvider
-import dropwizard.Service
+import providers.AbstractInjectableProvider
 import resources.BaseResource
 
 /**
  * @author Courtney Robinson <courtney@crlog.info>
  */
 
-object MyService extends Service[Config]("Odin") {
+object MyFilltaService extends FilltaService[Config]("MyFilltaService") {
 
   override protected def initializeService {
     //initialize

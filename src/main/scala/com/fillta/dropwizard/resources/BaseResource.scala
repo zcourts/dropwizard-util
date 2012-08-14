@@ -1,8 +1,8 @@
-package com.fillta.odin.resources
+package com.fillta.dropwizard.resources
 
 import javax.ws.rs.{Produces, GET, Path}
 import javax.ws.rs.core.{MediaType, Response}
-import com.fillta.odin.dropwizard.auth.RequireAuth
+import com.fillta.dropwizard.auth.RequireAuth
 
 /**
  * Courtney Robinson <courtney@crlog.info>

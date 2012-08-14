@@ -1,6 +1,6 @@
-package com.fillta.odin.dropwizard.auth
+package com.fillta.dropwizard.auth
 
-import javax.servlet.{FilterChain, ServletResponse, ServletRequest}
+import javax.servlet.FilterChain
 import javax.servlet.http.{HttpServletRequest, HttpServletResponse}
 import javax.ws.rs.WebApplicationException
 import javax.ws.rs.core.Response
