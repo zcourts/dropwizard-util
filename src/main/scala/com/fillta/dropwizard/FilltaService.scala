@@ -68,7 +68,8 @@ abstract class FilltaService[C <: Config](name: String) extends ScalaService[C](
     authFilter = new AuthFilter(sessions, authenticator)
 
 
-    errorHandler = new ExceptionMapper(config)
+//    errorHandler = new ExceptionMapper(config)
+    errorHandler = new ExceptionMapper()
     environment.addProvider(errorHandler)
     environment.addHealthCheck(new HealthCheck(name))
     this.initializeService
@@ -169,7 +170,7 @@ abstract class FilltaService[C <: Config](name: String) extends ScalaService[C](
   /**
    * Set the error handler used for HTTP errors
    */
-  def setErrorHandler[E <: ErrorHandler](handler: E) {
-    errorHandler.setHandler(handler)
-  }
+//  def setErrorHandler[E <: ErrorHandler](handler: E) {
+  //    errorHandler.setHandler(handler)
+  //  }
 }

@@ -15,10 +15,10 @@ class ErrorHandler(config: Config) {
       val r: Response = wae.getResponse
       //.`type`(MediaType.APPLICATION_JSON)
       if (r != null) {
-        r.getStatus match {
-          case 404 =>
-          case 401 =>
-        }
+//        r.getStatus match {
+//          case 404 =>
+//          case 401 =>
+//        }
       }
     }
   }
